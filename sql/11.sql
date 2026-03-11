@@ -22,4 +22,5 @@ JOIN (
     JOIN actor USING (actor_id)
 ) AS actor_list
 USING (film_id)
-WHERE special_feature = 'Behind the Scenes';
+WHERE special_feature = 'Behind the Scenes'
+ORDER BY "Actor Name";
